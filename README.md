@@ -71,3 +71,5 @@ https://www.techtarget.com/searchcloudcomputing/tip/Benefits-and-drawbacks-of-AI
 
 ### Date
 6 / 22 / 2022
+
+&copy; Basel Husam Mather 2022 
