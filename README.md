@@ -27,4 +27,47 @@ The song dataset is a free source dataset from Kaggle, the main purpose/target o
 </ul>
 
 The dataset is from the musical industry. We've chosen this dataset to make something unserious and show that even in a big project you can make something unusual, the seriously is important but not always. as a part of the youth community, and because the music is the main part of our daily routines, we found it interesting to make this project. <br>
-Firstly, we've cleaned the data by finding outliers and handling them, by making a Box-Plot for each feature, and removing the detected outliers. <br>
+Firstly, we've cleaned the data by finding outliers and handling them, by making a Box-Plot for each feature, and removing the detected outliers. <br> <br>
+
+![Alt text](https://github.com/baselhusam/Song-Popularity-Prediction/blob/main/Images/Screenshot%202022-06-22%20020401.png "BoxPlot Figure For All Columns") <br> <br>
+Then, we continued our analysis by looking for skewness in columns by making histograms for each column <br> <br>  
+![Alt text](https://github.com/baselhusam/Song-Popularity-Prediction/blob/main/Images/Screenshot%202022-06-22%20020529.png "Histogram Figure For All Columns") <br><br>
+then fixing this skewness by applying a kind of transformation called the square root transformation to reduce the difference between features. <br><br>
+![Alt text](https://github.com/baselhusam/Song-Popularity-Prediction/blob/main/Images/Screenshot%202022-06-22%20020621.png "The Distribution After The Transformation") <br><br>
+After that, we applied the Min-Max Scaler normalization for some features that have a different scale than others. Finally, we looked into the correlation between features by making a heatmap plot using the seaborn library. <br> <br>
+![Alt text](https://github.com/baselhusam/Song-Popularity-Prediction/blob/main/Images/Screenshot%202022-06-22%20020642.png "Heatmap Figure For Correlation Between Features") <br><br>
+
+### 3. Result and Discussion
+For us, as a regression project, the best metrics to evaluate our model are the R2 score, and the RMSE (Root Mean Squared Error). After we've set our hyperparameters for our Random Forest model for the n_estimators as 500, we concluded the results below:
+#### Quality Of The Model
+| R2 | RMSE |
+| --- | --- |
+| 0.4168 | 16.58 |
+
+#### Computational Metrics
+| RAM (GB) | Time Spent (m) | Hard Disk (GB) |
+| ---- | ----- | ----- |
+| 3.38 | 1.7 | 38.72 |
+
+<br> 
+As we can see the R2 score for our model is almost 0.42 which means that we can predict about 42.0% from the data by this model.
+The RMSE is almost 16.5 which means that the predictions from the model will be far from the actual value maximum of 16.5, either higher than the actual value or lower. <br>
+For Computational Metrics we found that we used from the google colab environment about 3.38 GB of RAM and 38.72 GB of Hard Disk, and it took 1.7 seconds to build and fit our model with the data we have. <br>
+
+### 4. Conclusions
+Here, we have come to the end of the project. The purpose of this research was to identify the popularity of a song. We tried many machine-learning algorithms and found out that the best algorithm and well-suit model for our data is the Random Forest algorithm. We faced many challenges in some of our features like “Instrumentalness” feature where almost all the records were outliers. But on the other hand, we did our best trying to manipulate the data to reach the highest accuracy possible for our model. <br>
+As a result, we achieved a stunning Root Mean Square Error (RMSE) which equals 16.58, and here is the features importance percentage in our data: <br> <br>
+![Alt text](https://github.com/baselhusam/Song-Popularity-Prediction/blob/main/Images/Screenshot%202022-06-22%20020816.png "Features Importance For The Model") <br> <br>
+We found that the “loudness” has the highest importance for our model, so we can conclude that the more the song is loud the more the probability to be a popular song. <br>
+The ”key”, “audio_mode” and “time_signature” features have the least importance for the model, maybe that is because the number of unique values in these features is very small. <br>
+We do hope that our project will be interesting and maybe even knowledgeable. <br>
+
+### Refrences
+1. Kanjilal, J., 2021. Benefits and drawbacks of AI in cloud computing. [online] SearchCloudComputing. Available at:
+https://www.techtarget.com/searchcloudcomputing/tip/Benefits-and-drawbacks-of-AI-in-cloud-computing [Accessed 31 May 2022]. <br>
+2. Qi, Y., 2012. Random forest for bioinformatics. In Ensemble machine learning (pp. 307-323). Springer, Boston, MA. <br>
+3. Yiu, T., 2019. Understanding Random Forest. [online] Medium. Available at: https://towardsdatascience.com/understanding-random-forest-58381e0602d2 [Accessed 31 May 2022]. <br>
+
+
+### Date
+6 / 22 / 2022
