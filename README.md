@@ -1,4 +1,4 @@
-# Song Popularity Prediction Project
+# Song Popularity Prediction 
 
 ## Executiv Summary
 This project puts the prediction of the song's popularity in the spotlight. After we've done our analysis and the EDA process and made it prepared, we found that **Random Forest Regressor** model was the most suitable algorithm for our data, but there were some issues with the data set we had to deal with. <br>
@@ -71,7 +71,7 @@ https://www.techtarget.com/searchcloudcomputing/tip/Benefits-and-drawbacks-of-AI
 3. Yiu, T., 2019. Understanding Random Forest. [online] Medium. Available at: https://towardsdatascience.com/understanding-random-forest-58381e0602d2 <sub>[Accessed 31 May 2022]. </sub><br>
 
 
-##### Date
+#### Date
 6 / 22 / 2022
 
 &copy; <i> Basel Mather 2022 </i>
