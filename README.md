@@ -54,7 +54,7 @@ For us, as a regression project, the best metrics to evaluate our model are the 
 
 As we can see the `R2` score for our model is almost 0.42 which means that we can predict about 42.0% from the data by this model.
 The `RMSE` is almost 16.5 which means that the predictions from the model will be far from the actual value maximum of 16.5, either higher than the actual value or lower. <br>
-For Computational Metrics we found that we used from the google colab environment about 3.38 GB of *RAM* and 38.72 GB of **Hard Disk**, and it took 1.7 seconds to **build and fit our model with the data we have.** <br>
+For Computational Metrics we found that we used from the google colab environment about 3.38 GB of **RAM** and 38.72 GB of **Hard Disk**, and it took 1.7 seconds to **build and fit our model with the data we have.** <br>
 
 ### 4. Conclusions
 Here, we have come to the end of the project. The purpose of this research was to identify the popularity of a song. We tried many machine-learning algorithms and found out that the best algorithm and well-suit model for our data is the Random Forest algorithm. We faced many challenges in some of our features like `Instrumentalness` feature where almost all the records were outliers. But on the other hand, we did our best trying to manipulate the data to reach the highest accuracy possible for our model. <br>
